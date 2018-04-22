@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@drawable/mit3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:scaleType="matrix" />
+    <LinearLayout
+
+        android:layout_width="300sp"
+        android:orientation="vertical"
+        android:background="@drawable/login_box"
+        android:layout_gravity="center"
+        android:layout_height="250sp">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/signing_in"
+            android:text="Sign in to your account"
+            android:background="@drawable/singn_to_your_account"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:layout_margin="0sp"
+            android:padding="10sp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/loginTextbox"
+            android:minLines="1"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:background="#9e9e9e"
+            android:layout_marginTop="40sp"
+            android:paddingTop="5sp"
+            android:paddingBottom="5sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:hint="Username"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textAlignment="center"
+            android:inputType="text"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/passTextbox"
+            android:minLines="1"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:background="#9e9e9e"
+            android:layout_marginTop="10sp"
+            android:inputType="textPassword"
+            android:paddingTop="5sp"
+            android:paddingBottom="5sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:hint="Password"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textAlignment="center"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_margin="10sp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/error_textbox"
+                android:visibility="invisible"
+                android:text="Wrong Username or Password!"
+                android:textColor="#ff0000"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="50sp"
+                android:id="@+id/loading_image"
+                android:src="@drawable/loading"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="0sp"
+                android:visibility="gone"
+                android:layout_height="50sp" />
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="wrap_content"
+                android:text="Sign in"
+                android:background="#8a531b"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:paddingTop="5sp"
+                android:paddingBottom="5sp"
+                android:paddingRight="15sp"
+                android:paddingLeft="15sp"
+                android:layout_marginTop="12sp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

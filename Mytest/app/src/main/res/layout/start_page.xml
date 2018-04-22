@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/mit"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="5sp"
+        android:background="#8a531b"
+        android:layout_height="50sp">
+        <TextView
+            android:id="@+id/reg_no"
+            android:layout_width="match_parent"
+            android:text="Reg No: 150905364"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            android:padding="10sp"
+            android:layout_gravity="left"
+            android:gravity="center|left"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/refresh_image"
+            android:layout_width="38sp"
+            android:src="@drawable/refresh_animation"
+            android:layout_margin="5sp"
+            android:visibility="gone"
+            android:layout_height="38sp" />
+        <Button
+            android:layout_width="25sp"
+            android:id="@+id/refresh_button"
+            android:textSize="12sp"
+            android:background="@drawable/refresh"
+            android:layout_gravity="center"
+            android:layout_margin="8sp"
+            android:layout_height="25sp" />
+        <Button
+            android:layout_width="30sp"
+            android:id="@+id/logout_button"
+            android:textSize="12sp"
+            android:background="@drawable/logout"
+            android:layout_gravity="center"
+            android:layout_margin="10sp"
+            android:layout_height="30sp" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/attendance_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
